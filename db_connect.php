@@ -8,7 +8,7 @@ $dbName = 'tms_db';
 
 $con = mysqli_init();
 
-if (!mysqli_real_connect($con, $serverName, $userName, $password, $dbName, $port, NULL)) {
+if (!mysqli_real_connect($con, $serverName, $userName, $password, $port, $dbName)) {
   
     die("Koneksi gagal: " . mysqli_connect_error());
 echo "Koneksi berhasil!";
